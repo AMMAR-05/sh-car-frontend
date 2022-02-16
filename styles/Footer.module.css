@@ -1,0 +1,75 @@
+.footer {
+  background-color: black;
+  color: azure;
+  padding: 1rem;
+}
+
+.borders {
+  border-bottom: 1px solid white;
+  margin-bottom: 1rem;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  padding: 1rem;
+  font-size: 1.5rem;
+  transition: all 0.8s ease;
+}
+.arrow_active {
+  transform: rotate(180deg);
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.list {
+  overflow: hidden;
+  transition: all 1.3s ease;
+  height: 0;
+}
+.active {
+  height: 5rem;
+}
+.social {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.icon:hover {
+  color: #00acee;
+}
+.icon_instagram:hover {
+  color: #e1306c;
+}
+
+.notes {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Responsive Design */
+
+@media only screen and (min-width: 1024px) {
+  .top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .borders {
+    border: none;
+  }
+  .list {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+}

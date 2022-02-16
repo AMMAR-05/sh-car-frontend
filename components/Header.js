@@ -16,7 +16,7 @@ function Header() {
 
   return (
     <header className="h-20">
-      <div className=" absolute top-0 flex w-full justify-between align-middle p-0.5">
+      <div className="absolute top-0 flex w-full justify-between align-middle p-0.5">
         <div
           className=" border-2 cursor-pointer z-50"
           onClick={BurgerMenuHandler}
