@@ -6,6 +6,17 @@
   height: 100vh;
   transition: all 0.3s ease-in-out;
   z-index: 10;
+  background-color: white;
+  color: black;
+  padding: 5rem;
+}
+
+.nav__closeIcon {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 2rem;
+  position: absolute;
+  right: 10%;
 }
 
 .active {
@@ -15,6 +26,16 @@
 .nav__content {
   display: flex;
   flex-direction: column;
-  margin-top: 10rem;
-  margin-left: 10rem;
+}
+
+@media only screen and (min-width: 760px) {
+  .nav {
+    width: 50%;
+    top: 8rem;
+    height: 70%;
+    border-radius: 0.5rem;
+  }
+  .active {
+    left: 10%;
+  }
 }

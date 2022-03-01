@@ -14,7 +14,6 @@ function Footer() {
   const [adviceState, setAdviceState] = useState(false);
   const [servicesState, setServicesState] = useState(false);
   const [aboutState, setAboutState] = useState(false);
-  console.log(servicesState);
 
   // Get current Window Width
   function useWindowSize() {

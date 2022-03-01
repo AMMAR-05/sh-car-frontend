@@ -1,0 +1,26 @@
+.headerIcon {
+  font-size: 3.5rem;
+  padding: 1rem;
+}
+.headerIcon:hover {
+  background-color: rgba(180, 180, 180, 0.219);
+}
+.header {
+  height: 10vh;
+  background-color: black;
+  color: aliceblue;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__left,
+.header__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.burger__menu {
+  cursor: pointer;
+}

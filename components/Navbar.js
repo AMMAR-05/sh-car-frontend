@@ -1,19 +1,21 @@
-import React from "react";
+import React, { useRef } from "react";
 import Link from "next/link";
-import styles from "../styles/Navbar.module.css";
+import Styles from "../styles/Navbar.module.css";
+import { IoClose } from "react-icons/io5";
 
-function Navbar({ isOpen }) {
+function Navbar({ isOpen, setIsOpen }) {
   return (
-    <nav
-      className={`bg-gradient-to-b from-indigo-200 to-gray-200 ${styles.nav} ${
-        isOpen && styles.active
-      }`}
-    >
-      <ul className={styles.nav__content}>
-        <Link href="/">Home</Link>
-        <Link href="/">Crypto</Link>
-        <Link href="/">DeFi</Link>
-        <Link href="/">NFT</Link>
+    <nav className={`${Styles.nav} ${isOpen && Styles.active}`}>
+      <IoClose
+        className={Styles.nav__closeIcon}
+        onClick={() => setIsOpen(false)}
+      />
+
+      <ul className={Styles.nav__content}>
+        <Link href="/">Modelle</Link>
+        <Link href="/">Kontakt</Link>
+        <Link href="/">Services</Link>
+        <Link href="/">Über Uns</Link>
       </ul>
     </nav>
   );
