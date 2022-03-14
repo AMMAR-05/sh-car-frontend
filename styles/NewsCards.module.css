@@ -1,0 +1,25 @@
+.card {
+  width: 22rem;
+  min-width: 22rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  overflow: hidden;
+  filter: drop-shadow(1px 7px 2px rgba(90, 1, 1, 0.418))
+    drop-shadow(1px 6px 2px rgba(68, 65, 65, 0.1));
+  background: linear-gradient(whitesmoke, #fff, #ffffff);
+  box-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.45);
+  margin-bottom: 2rem;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__container {
+  padding: 1rem;
+}
+
+.card__title {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px rgba(90, 87, 87, 0.151);
+}

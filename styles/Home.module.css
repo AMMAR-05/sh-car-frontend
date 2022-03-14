@@ -33,9 +33,59 @@
   margin-left: 0.5rem;
   background-color: rgb(41, 5, 5);
 }
+
+.navbar__active {
+  background: burlywood;
+}
 @media only screen and (min-width: 850px) {
   .heroImage {
     background-position: right;
     height: 90vh;
   }
+}
+
+/* News Section */
+.news {
+  position: relative;
+}
+.news__cards {
+  -ms-overflow-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+.news__cards::-webkit-scrollbar {
+  display: none;
+}
+.news__cards:after {
+  content: "";
+  width: 200px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background: -webkit-linear-gradient(
+    to left,
+    rgba(10, 10, 10, 0.966) 0%,
+    rgba(10, 10, 10, 0.411) 20%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background: linear-gradient(
+    to left,
+    rgba(10, 10, 10, 0.966) 0%,
+    rgba(10, 10, 10, 0.411) 20%,
+    rgba(255, 255, 255, 0) 60%
+  );
 }

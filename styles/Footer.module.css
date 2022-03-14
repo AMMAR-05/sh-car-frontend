@@ -38,7 +38,8 @@
 }
 .social {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
   font-size: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -49,7 +50,9 @@
 .icon_instagram:hover {
   color: #e1306c;
 }
-
+.twitter {
+  margin: 0 1rem;
+}
 .notes {
   margin-bottom: 1rem;
   display: flex;
@@ -68,6 +71,7 @@
   }
   .list {
     display: block;
+    height: 5rem;
   }
   .arrow {
     display: none;

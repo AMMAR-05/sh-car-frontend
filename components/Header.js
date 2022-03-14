@@ -1,44 +1,48 @@
 import React, { useState } from "react";
+import styles from "../styles/Header.module.css";
 import Link from "next/link";
-import Styles from "../styles/Header.module.css";
 import Navbar from "./Navbar";
-import { IoCarSportSharp } from "react-icons/io5";
-import { BsFillPersonFill } from "react-icons/bs";
+import { IoCarSport } from "react-icons/io5";
+import { BsPersonFill } from "react-icons/bs";
 import { AiFillStar } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Toggle the navbar state when clicking on burger menu icon
   const BurgerMenuHandler = () => setIsOpen(!isOpen);
 
   return (
-    <header className={Styles.header}>
-      <div className={Styles.header__left}>
-        <div className={Styles.burger__menu} onClick={BurgerMenuHandler}>
-          <GiHamburgerMenu />
+    <header className={styles.header}>
+      <div className={`${styles.header__left} ${styles.header__content}`}>
+        <div className={styles.burger_menu} onClick={BurgerMenuHandler}>
+          <GiHamburgerMenu
+            className={`${styles.headerIcon} ${styles.burger_headerIcon}`}
+          />
         </div>
         <Link href="/">
           <a>
-            <IoCarSportSharp className={Styles.headerIcon} />
+            <IoCarSport className={styles.headerIcon} />
           </a>
         </Link>
       </div>
 
       <Link href="/">
         <a>
-          <p>Sh Car</p>
+          <p className="">SH CAR</p>
         </a>
       </Link>
-      <div className={Styles.header__right}>
+
+      <div className={`${styles.header__right} ${styles.header__content}`}>
         <Link href="/">
           <a>
-            <BsFillPersonFill className={Styles.headerIcon} />
+            <AiFillStar className={styles.headerIcon} />
           </a>
         </Link>
         <Link href="/">
           <a>
-            <AiFillStar className={Styles.headerIcon} />
+            <BsPersonFill className={styles.headerIcon} />
           </a>
         </Link>
       </div>
